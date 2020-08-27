@@ -20,6 +20,8 @@ int main(){
     for(int b=n/2;b>=1;b/=2){
         while(k+b<n && arr[k+b]<=find){
             k+=b;
+            printf("k:%d b:%d",k,b);
+            cout<<endl;
         }
         if(arr[k]==find){
             cout<<"found"<<endl;
